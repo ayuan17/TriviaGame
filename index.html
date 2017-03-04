@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="assets/javascript/trivia.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style= "background-color:black;">
+
+<div id="container">
+
+    <div id="startScreen" style="background:url(nba.jpg); background-repeat:no-repeat; background-size: 90% 100% text-align: center;">
+        <h1>NBA Trivia</h1>
+        <input id="StartButton" type="button" value="Start" class="button1">
+    </div>
+    <div style="background:url(nba.jpg); background-repeat:no-repeat; background-size: 100% 100%" id="maingame">
+
+        <div id="photo"></div>
+        <div id="question"></div>
+        <div id="answers"></div>
+        <div id="guesses">
+            <div id="A">A</div>
+            <div id="B">B</div>
+            <div id="C">C</div>
+        </div>
+
+        <div id="timerBox">
+            <p id=time></p>
+        </div>
+
+        <div id="score">
+            <ul>
+                <li class="score1">Correct:<p class="wins"></p></li>
+                <li class="score2">Wrong:<p class="losses"></p></li>
+                <li class="score3">No Answer:<p class="noguess"></p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="endScreen">
+        <h1>Final:</h1>
+        <div id="score">
+                <ul>
+                    <li>Correct:<p class="wins"></p></li>
+                    <li>Wrong:<p class="losses"></p></li>
+                    <li>No Answer:<p class="noguess"></p></li>
+                </ul>
+         </div>
+    </div>
+</div>
+</body>
+
+</html>
